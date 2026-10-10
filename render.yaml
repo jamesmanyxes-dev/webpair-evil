@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: web-pair-v2
+    runtime: node
+    plan: free
+    buildCommand: npm install --legacy-peer-deps
+    startCommand: node server.js
+    envVars:
+      - key: PORT
+        value: 3000
